@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .purple {
+            background-color: purple;
+                }
+        .blanc {
+            background-color: aliceblue;
+        }
+        .rose {
+            background-color: rgb(241, 68, 239);
+        }
+        .blue {
+            background-color: blue;
+        }
+        .darkblue {
+            background-color: rgb(11, 11, 99);
+        }
+        .lightblue {
+            background-color: aqua;
+        }
+        .middleblue {
+            background-color: rgb(22, 111, 111);
+        }
+        
+        .frame {
+            display: grid;
+            background-color: green;
+            grid-template-columns: repeat(19, 1fr);
+            grid-template-rows:  repeat(11, 1fr);
+            width:570px;
+            height: 330px;
+           
+            
+        }
+        div div {
+            color: rgba(0,0,255,0)      }
+    h1 {
+        color: blueviolet;
+        text-align: center;
+        margin-bottom: 50px;
+
+    }
+    .bigdiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+
+        .two {
+            grid-column: 2 / span 5;
+        }
+        .four {
+            grid-column: 8 / span 8;
+        }
+        div>div {
+            border:0px;
+        }
+        .five {
+            grid-column: 16 / span 2;
+        }
+        .six {
+            grid-column: 18 / span 2;
+        }
+        .nine {
+            grid-column: 3 / span 5;
+        }
+        .eleven {
+            grid-column: 9 / span 6;
+        }
+        .thirteen {
+            grid-column: 16 / span 2;
+        }
+        .sixteen {
+            grid-column: 1 / span 2;
+            grid-row: 3 / span 3;  
+        }
+        .seventeen {
+            grid-column: 3 / span 3;
+            grid-row: 3 / span 3;
+        }
+        .eighteen {
+            grid-column: 6 / span 3;
+            grid-row: 3 / span 3;
+        }
+        .nineteen {
+            grid-column: 9 / span 3;
+            grid-row: 3 / span 3;
+        }
+        .twenty {
+            grid-column: 12 / span 3;
+            grid-row: 3 / span 2;
+        }
+        .twentythree {
+            grid-column: 17 / span 2;
+        }
+        .twentynine {
+            grid-column: 18 / span 2;
+            grid-row: 4 / span 3;
+        }
+        .thrity {
+            grid-row:5;
+            grid-column: 12;
+        }
+
+        .thirtyone {
+           grid-column: 13 / span 3;
+        }
+        .thirtythree {
+            grid-row: 5 / span 2;
+            grid-column: 17;
+        }
+        .thirtyfour {
+            grid-column: 1 / span 10;
+        }
+        .fourtyone {
+            grid-row: 7 / span 2;
+        }
+        .fourtythree {
+            grid-row: 7 / span 2;
+            grid-column: 3 / span 2;
+        }
+        .fourtyfive {
+            grid-column: 6 / span 2;
+        }
+        .fourtysix {
+            grid-column: 8 / span 4;
+        } 
+        .fifty {
+            grid-column: 15 / span 2;
+        }
+        .fiftyone {
+            grid-column: 17 / span 2;
+        }
+        .fiftyfour {
+            grid-row: 8 / span 2;
+            grid-column: 5;
+        }
+        .fiftyfive { 
+            grid-column: 6 / span 2;
+        }
+        .fiftyseven {
+            grid-column: 9 / span 2;
+            grid-row:8;
+        }
+        .fiftyeight {
+            grid-row: 8 / span 2;
+            grid-column: 11;
+        }
+        .fiftynine {
+            grid-row: 8 / span 2;
+            grid-column: 12;
+        }
+        .sixty {
+            grid-row: 8 / span 2;
+            grid-column: 13;
+        }
+        .sixtyone {
+            grid-row: 8 / span 2;
+            grid-column: 14;
+        }
+        .sixtyfour {
+            grid-column: 17 / span 2;
+            grid-row: 8 / span 2;
+            }
+        .sixtyfive {
+            grid-column: 19;
+            grid-row: 8 / span 2;
+        }
+        .sixtysix {
+            grid-column: 1 /span 2;
+        }
+        .sixtynine {
+            grid-column:6 / span 2;
+        }
+        .seventy {
+            grid-column: 8 / span 2;
+            grid-row:9 / span 2;
+        }
+        .seventytwo {
+            grid-column:15 / span 2;
+            grid-row: 9 /span 2;
+        }
+        .seventyfive {
+            grid-column: 3 / span 3;
+            grid-row: 10 / span 2;
+        }
+        .eightynine {
+            grid-column: 7 / span 3;
+        }
+        .eightyfive {
+            grid-row:10 / span 2;
+            grid-column: 19;
+        }
+        .ninety {
+            grid-column: 10 / span 5;
+        }
+        .ninetyone {
+            grid-column: 15 / span 3;
+        }
+        
+        
+    
+    </style>
+</head>
+
+
+<body>
+
+<div class="bigdiv">   
+    <h1>drawing</h1>
+
+<div class="frame">
+    <div class="one purple">1</div>
+    <div class="two blanc">2</div>
+    <div class="three rose">3</div>
+    <div class="four blanc">4</div>
+    <div class="five rose">5</div>
+    <div class="six blanc">6</div>
+    <div class="seven blanc">7</div>
+    <div class="eight purple">8</div>
+    <div class="nine blanc">9</div>
+    <div class="ten purple">10</div>
+    <div class="eleven blanc">11</div>
+    <div class="twelve rose">12</div>
+    <div class="thirteen blanc">13</div>
+    <div class="fourteen rose">14</div>
+    <div class="fiveteen blanc">15</div>
+    <div class="sixteen blanc">16</div>
+    <div class="seventeen purple">17</div>
+    <div class="eighteen blanc">18</div>
+    <div class="nineteen purple">19</div>
+    <div class="twenty blanc">20</div>
+    <div class="twentyone blanc">21</div>
+    <div class="twentytwo rose">22</div>
+    <div class="twentythree blanc">23</div>
+    <div class="twentyfive rose">25</div>
+    <div class="twentysix rose">26</div>
+    <div class="twentyseven blanc">27</div>
+    <div class="twentyeight rose">28</div>
+    <div class="twentynine blanc">29</div>
+    <div class="thirty middleblue">30</div>
+    <div class="thirtyone blanc">31</div>
+    <div class="thirtytwo rose">32</div>
+    <div class="thirtythree blanc">33</div>
+    <div class="thirtyfour blanc">34</div>
+    <div class="thirtyfive middleblue">35</div>
+    <div class="thirtysix blanc">36</div>
+    <div class="thirtyseven middleblue">37</div>
+    <div class="thirtyeight blanc">38</div>
+    <div class="thirtynine rose">39</div>
+    <div class="fourty blanc">40</div>
+    <div class="fourtyone lightblue">41</div>
+    <div class="fourtytwo blanc">42</div>
+    <div class="fourtythree blanc">43</div>
+    <div class="fourtyfour blanc">44</div>
+    <div class="fourtyfive darkblue">45</div>
+    <div class="fourtysix blanc">46</div>
+    <div class="fourtyseven blue">47</div>
+    <div class="fourtyeight blanc">48</div>
+    <div class="fourtynine rose">49</div>
+    <div class="fifty blanc">50</div>
+    <div class="fiftyone darkblue">51</div>
+    <div class="fiftytwo blanc">52</div>
+    <div class="fiftythree lightblue">53</div>
+    <div class="fiftyfour darkblue">54</div>
+    <div class="fiftyfive blanc">55</div>
+    <div class="fiftysix darkblue">56</div>
+    <div class="fiftyseven blanc">57</div>
+    <div class="fiftyeight blue">58</div>
+    <div class="fiftynine blanc">59</div>
+    <div class="sixty blue">60</div>
+    <div class="sixtyone blanc">61</div>
+    <div class="sixtytwo rose">62</div>
+    <div class="sixtythree darkblue">63</div>
+    <div class="sixtyfour blanc">64</div>
+    <div class="sixtyfive darkblue">65</div>
+    <div class="sixtysix blanc">66</div>
+    <div class="sixtyseven lightblue">67</div>
+    <div class="sixtyeigth blanc">68</div>
+    <div class="sixtynine blanc">69</div>
+    <div class="seventy blanc">70</div>
+    <div class="seventyone blanc">71</div>
+    <div class="seventytwo blanc">72</div>
+    <div class="seventythree blanc">73</div>
+    <div class="seventyfour lightblue">74</div>
+    <div class="seventyfive blanc">75</div>
+    <div class="seventysix darkblue">76</div>
+    <div class="seventyseven blanc">77</div>
+    <div class="seventyeight darkblue">78</div>
+    <div class="seventynine blanc">79</div>
+    <div class="eighty blue">80</div>
+    <div class="eightyone blanc">81</div>
+    <div class="eightytwo darkblue">82</div>
+    <div class="eightythree blanc">83</div>
+    <div class="eightyfour darkblue">84</div>
+    <div class="eightyfive blanc">85</div>
+    <div class="eightysix lightblue">86</div>
+    <div class="eightyseven blanc">87</div>
+    <div class="eightyeight blanc">88</div>
+    <div class="eightynine darkblue">89</div>
+    <div class="ninety blanc">90</div>
+    <div class="ninetyone darkblue">91</div>
+    <div class="ninetytwo blanc">92</div>
+
+</div>   
+</div>  
+</body>
+</html>
